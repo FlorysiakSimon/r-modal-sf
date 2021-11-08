@@ -1,6 +1,6 @@
 {
   "name": "r-modal-sf",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "basic react modale component",
   "main": "dist/index.js",
   "module": "dist.index.es.js",
