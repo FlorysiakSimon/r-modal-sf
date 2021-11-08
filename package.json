@@ -1,6 +1,6 @@
 {
   "name": "r-modal-sf",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "basic react modale component",
   "main": "dist/index.js",
   "module": "dist.index.es.js",
@@ -28,6 +28,10 @@
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-peer-deps-external": "^2.2.4"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FlorysiakSimon/r-modal-sf"
+  },
   "peerDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -36,5 +40,11 @@
   "dependencies": {
     "rollup-plugin-terser": "^7.0.2",
     "save-dev": "0.0.1-security"
-  }
+  },
+  "keywords": [
+    "react",
+    "react-modal",
+    "react-component",
+    "modal"
+  ]
 }

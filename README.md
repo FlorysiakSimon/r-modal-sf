@@ -1,20 +1,19 @@
 # r-modal-sf
 
-[npm link](https://www.npmjs.com/package/r-modal-sf)
+[npm](https://www.npmjs.com/package/r-modal-sf)
+[github](https://github.com/FlorysiakSimon/r-modal-sf)
 
 ## Installation
 
 ```sh
-npm i r-modal-sf
-```
+npm i r-modal-sf;
 
-```sh
 import { Modal } from 'r-modal-sf';
 ```
 
-## Examples
+## Example
 
-Here is a simple example of react-modal-sf being used in an app with some custom styles
+Here is a simple example of r-modal-sf being used in an app
 
 ```jsx
 import React, { useState } from "react";
@@ -27,9 +26,7 @@ export const App = () => {
   };
   return (
     <>
-      <div>
-        <button onClick={toggleModal}>Open modal</button>
-      </div>
+      <button onClick={toggleModal}>Open modal</button>
 
       <Modal
         content="test content"
@@ -39,4 +36,30 @@ export const App = () => {
     </>
   );
 };
+```
+
+You can also use custom style
+
+```jsx
+const customStyle = {
+  overlay: {
+    backgroundColor: "green",
+  },
+  content: {
+    backgroundColor: "white",
+    borderRadius: "10px",
+  },
+  close: {
+    padding: "5px 17px",
+    size: "14px",
+    border: "none",
+  },
+};
+
+<Modal
+  content="test content"
+  modalOpen={modalOpen}
+  style={customStyle}
+  modalClose={toggleModal}
+/>;
 ```
