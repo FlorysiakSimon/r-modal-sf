@@ -17,6 +17,7 @@ Here is a simple example of r-modal-sf being used in an app
 
 ```jsx
 import React, { useState } from "react";
+import { Modal } from "r-modal-sf";
 
 export const App = () => {
   const [modalOpen, setModalOpen] = useState(false);
