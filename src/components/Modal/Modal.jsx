@@ -78,5 +78,4 @@ Modal.propTypes ={
     style:PropTypes.object,
     modalOpen: PropTypes.bool.isRequired,
     modalClose: PropTypes.func.isRequired,
-    buttonContent: PropTypes.string.isRequired
 }
