@@ -1,7 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types'; 
 
-export const Modal = ({content,style,modalOpen,modalClose}) => {
+/** Display modal
+ * @param  {string} content
+ * @param  {object} style
+ * @param  {boolean} modalOpen
+ * @param  {function} modalClose
+ * @param  {string} buttonContent
+ */
+export const Modal = ({content,style,modalOpen,modalClose,buttonContent}) => {
 
     const defaultStyles = {
         modal:{
@@ -58,7 +65,7 @@ export const Modal = ({content,style,modalOpen,modalClose}) => {
                 <div className="modalContent" style={style && style.content ? style.content : defaultStyles.content}>
                     <p>{content}</p>
                     <button onClick={modalClose} style={style && style.close ? style.close : defaultStyles.close} className="modalClose">
-                        X
+                        {buttonContent}
                     </button>
                 </div>
             </div>
@@ -71,4 +78,5 @@ Modal.propTypes ={
     style:PropTypes.object,
     modalOpen: PropTypes.bool.isRequired,
     modalClose: PropTypes.func.isRequired,
+    buttonContent: PropTypes.string.isRequired
 }

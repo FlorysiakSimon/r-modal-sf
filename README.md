@@ -6,7 +6,7 @@
 ## Installation
 
 ```sh
-npm i r-modal-sf;
+npm i r-modal-sf
 
 import { Modal } from 'r-modal-sf';
 ```
@@ -33,6 +33,7 @@ export const App = () => {
         content="test content"
         modalOpen={modalOpen}
         modalClose={toggleModal}
+        buttonContent="X"
       />
     </>
   );
@@ -62,5 +63,6 @@ const customStyle = {
   modalOpen={modalOpen}
   style={customStyle}
   modalClose={toggleModal}
+  buttonContent="X"
 />;
 ```
