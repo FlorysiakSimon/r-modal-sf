@@ -63,7 +63,7 @@ export const Modal = ({content,style,modalOpen,modalClose,buttonContent}) => {
                 className="modalOverlay">   
                 </div>
                 <div className="modalContent" style={style && style.content ? style.content : defaultStyles.content}>
-                    <p>{content}</p>
+                    <div>{content}</div>
                     <button onClick={modalClose} style={style && style.close ? style.close : defaultStyles.close} className="modalClose">
                         {buttonContent}
                     </button>
@@ -78,4 +78,5 @@ Modal.propTypes ={
     style:PropTypes.object,
     modalOpen: PropTypes.bool.isRequired,
     modalClose: PropTypes.func.isRequired,
+    buttonClose: PropTypes.string
 }
