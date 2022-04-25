@@ -74,7 +74,7 @@ export const Modal = ({content,style,modalOpen,modalClose,buttonContent}) => {
 }
 
 Modal.propTypes ={
-    content: PropTypes.string.isRequired,
+    content: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
     style:PropTypes.object,
     modalOpen: PropTypes.bool.isRequired,
     modalClose: PropTypes.func.isRequired,
